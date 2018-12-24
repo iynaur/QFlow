@@ -29,7 +29,7 @@ DISTFILES = qmldir
 #------------------------------------- install module to Qt
 qmldir.files = qmldir
 unix {
-    installPath = $$[QT_INSTALL_QML]/Flow
+    installPath = $$[QT_INSTALL_QML]/QmlFlow
     qmldir.path = $$installPath
     target.path = $$installPath
     INSTALLS += target qmldir

@@ -1,6 +1,6 @@
 #include "FlowPort.h"
 #include "FlowNode.h"
-#include "FlowTracer.h"
+//#include "FlowTracer.h"
 
 #include <QtCore/QMetaMethod>
 #include <QtCore/QDebug>

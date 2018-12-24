@@ -5,6 +5,8 @@
 #include <netinet/in.h>
 #include <netinet/tcp.h>
 
+#include <QDataStream>
+
 QVariant FlowCommunicationUtils::byteArrayToVariant(const QByteArray &data)
 {
     QVariant variant;

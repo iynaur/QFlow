@@ -1,13 +1,13 @@
 import QtQuick 2.2
-import Flow 1.0 as Flow
+import QmlFlow 1.0 as QmlFlow
 import App 1.0 as App
 
-Flow.Graph{
+QmlFlow.Graph{
     name:"G"
-    Flow.Node{
+    QmlFlow.Node{
         id: sourceNode
         debug:true
-        Flow.OutPort{
+        QmlFlow.OutPort{
             id: sourceOut1
             next:n1InPort
         }
@@ -26,15 +26,15 @@ Flow.Graph{
         }
     }
 
-    Flow.Node{
+    QmlFlow.Node{
         id: n1
         name : "n1"
         debug: true
-        Flow.InPort{
+        QmlFlow.InPort{
             id: n1InPort
         }
 
-        Flow.OutPort{
+        QmlFlow.OutPort{
             id: n1OutPort
             next: n2InPort
         }
@@ -48,15 +48,15 @@ Flow.Graph{
 
     }
 
-    Flow.Node{
+    QmlFlow.Node{
         id: n2
         name : "n2"
         debug: true
-        Flow.InPort{
+        QmlFlow.InPort{
             id: n2InPort
         }
 
-        Flow.OutPort{
+        QmlFlow.OutPort{
             id: n2OutPort
             next: n3InPort
         }
@@ -69,15 +69,15 @@ Flow.Graph{
         }
     }
 
-    Flow.Node{
+    QmlFlow.Node{
         id: n3
         name : "n3"
         debug: true
-        Flow.InPort{
+        QmlFlow.InPort{
             id: n3InPort
         }
 
-        Flow.OutPort{
+        QmlFlow.OutPort{
             id: n3OutPort
             next: sinkInPort
         }
@@ -89,10 +89,10 @@ Flow.Graph{
         }
     }
 
-    Flow.Node{
+    QmlFlow.Node{
         id: sinkNode
         debug: true
-        Flow.InPort{
+        QmlFlow.InPort{
             id:sinkInPort
         }
 

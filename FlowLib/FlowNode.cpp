@@ -66,7 +66,7 @@ FlowGraph *FlowNode::flowGraph()
         Q_ASSERT_X(current->parent(),name().toLatin1(),"FlowGraph for Node not found!!!!");
         current = current->parent();
     }
-    Q_ASSERT_X(nullptr,name().toLatin1(),"FlowGraph for Node not found!!!!");
+    Q_ASSERT_X(false,name().toLatin1(),"FlowGraph for Node not found!!!!");
     return nullptr;
 }
 

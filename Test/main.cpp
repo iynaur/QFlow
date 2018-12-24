@@ -8,8 +8,10 @@ int main(int argc,char **argv)
     qmlRegisterType<CppNode>("App", 1, 0, "CppNode");
 
     QQmlEngine engine;
+    engine.addImportPath("/home/yruan/QFlow-master");
+    engine.addPluginPath("/home/yruan/QFlow-master");
     QQmlComponent rootComponent(&engine);
-    rootComponent.loadUrl(QUrl("qml/Main.qml"));
+    rootComponent.loadUrl(QUrl("./qml/Main.qml"));
     if(rootComponent.status() != QQmlComponent::Ready)
     {
         qDebug() << "Not Ready!!!"  << rootComponent.errorString();

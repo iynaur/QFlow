@@ -6,7 +6,7 @@
 class QmlFlowPlugin : public QQmlExtensionPlugin
 {
     Q_OBJECT
-    Q_PLUGIN_METADATA(IID "Flow")
+    Q_PLUGIN_METADATA(IID "QmlFlow")
 
 public:
     void registerTypes(const char *uri);

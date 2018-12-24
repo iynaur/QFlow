@@ -24,3 +24,6 @@ DISTFILES += \
     QMAKE_EXTRA_TARGETS += first copydata
 }
 
+
+QML2_IMPORT_PATH += ..
+
